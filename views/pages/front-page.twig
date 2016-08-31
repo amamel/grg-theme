@@ -3,14 +3,77 @@
 
 {% block content %}
 
-		{% if brokercheck_tf %}
+  <section class="front-page-section">
 
-			<div class="brokercheck-bar">
-				<div class="wrapper">
-					{{brokercheck_text|wpautop}}
-				</div>
-			</div>
+  {% if brokercheck_tf %}
 
-		{% endif %}
+  	<div class="brokercheck-bar">
+  		<div class="wrapper">
+  			{{brokercheck_text|wpautop}}
+  		</div>
+  	</div>
+
+  {% endif %}
+
+    <div class="contain-md">
+    <p class="front-page-section-subtitle">Our Services</p>
+    <h2 class="front-page-section-title">How we can help you</h2>
+
+      <ul class="service-icons-list">
+        {% for icon in post.get_field('service_icons') %}
+          {% set connected_page = TimberPost(icon.connected_page) %}
+          <li class="service-icon">
+            <div class="service-icon-img">
+              <img src="{{TimberImage(icon.icon_id).src('thumbnail')}}" alt="">
+            </div>
+            <h5 class="service-icon-title">{{connected_page.title}}</h5>
+            <p class="service-icon-text">{{icon.text}}</p>
+            <a href="{{connected_page.link}}" class="service-icon-btn">{{icon.button_text}}</a>
+          </li>
+        {% endfor %}
+      </ul>
+
+    </div>
+  </section>
+
+  <section class="front-page-section -gray">
+    <div class="contain-md">
+
+    <p class="front-page-section-subtitle">Our Process</p>
+    <h2 class="front-page-section-title">Making your money work for you</h2>
+
+      <ul class="process-items-list">
+        {% for item in post.get_field('process_items') %}
+          <li class="process-item">
+            <h5 class="process-item-title">{{item.item_title}}</h5>
+            <p class="process-item-text">{{item.item_text}}</p>
+          </li>
+        {% endfor %}
+      </ul>
+
+    </div>
+  </section>
+
+  <section class="front-page-section">
+    <div class="contain-md">
+
+      <p class="front-page-section-subtitle">From the Blog</p>
+      <h2 class="front-page-section-title">Stay Up to Date</h2>
+
+      <ul class="featured-posts-list">
+        {% for id in post.featured_blog_posts %}
+          <li class="featured-post">
+            {% set feature = TimberPost(id) %}
+            <h5>{{feature.title}}</h5>
+            <p>{{feature.post_excerpt}}</p>
+            <a href="{{feature.link}}">Read More</a>
+          </li>
+        {% endfor %}
+        </li>
+      </ul>
+
+    </div>
+  </section>
+
 
 {% endblock %}

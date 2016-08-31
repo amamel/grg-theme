@@ -13,7 +13,31 @@
 	}
 }
 
+.site-social {
+	max-height: 0;
+	overflow: hidden;
+	flex-direction: column;
+	display:  flex;
+	align-items: center;
+
+	@include bp(nav) {
+		flex-direction: row;
+		max-height: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      padding: 10px;
+    }
+}
+
 .icon {
 	@include icon($color-accent-dark);
 	fill: $digital-blue-dark;
+	background: blue;
 }

@@ -1,0 +1,88 @@
+.service-icons-list,
+.process-items-list,
+.featured-posts-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.service-icon,
+.process-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-icons-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-icon {
+  text-align: center;
+  flex: 1 200px;
+}
+
+.service-icon-img {
+  display: flex;
+  justify-content: center;
+}
+
+.service-icon-title {
+  font-weight: $font-weight-strong;
+}
+
+.service-icon-btn {
+  border: 1px solid $brand-blue;
+  border-radius: 40px;
+  padding: 10px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.service-icon-text {
+  font-size: $size-xsml;
+}
+
+
+// Process Items
+
+.process-items-list {
+  flex-wrap: wrap;
+}
+
+.process-item {
+
+}
+
+.process-item-title {
+  color: $brand-blue;
+  font-weight: $font-weight-strong;
+}
+
+.process-item-text {
+
+}
+
+
+
+// Section Styles
+
+.front-page-section {
+  &.-gray {
+    background-color: #f8f8f8;
+  }
+}
+
+.front-page-section-title,
+.front-page-section-subtitle {
+  text-align: center;
+  font-weight: $font-weight-base;
+}
+
+.front-page-section-subtitle {
+  @include upperspace;
+  color: $brand-blue;
+  font-weight: $font-weight-strong;
+}
