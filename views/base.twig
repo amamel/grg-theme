@@ -1,5 +1,5 @@
 {% block html_head %}
-		{% include 'html-header.twig' %}
+	{% include 'html-header.twig' %}
 		{% block head %}
 		{% endblock %}
 		</head>
@@ -19,30 +19,26 @@
 		{% endif %}
 
 		<div class="contain-md">
-				<header class="site-header" role="banner">
-					{% block header %}
-						{% include 'headers/site_header.twig' %}
-					{% endblock %}
-				</header>
+			<header class="site-header" role="banner">
+				{% block header %}
+					{% include 'headers/site_header.twig' %}
+				{% endblock %}
+			</header>
 		</div><!--./header-wrapper-->
 
 		<main id="content" class="site-main" role="main">
-
-			<div class="main-content {{sidebar_class}}">
-				{% block header_content %}{% endblock %}
-				{% block content %}
-					Sorry, no content
-				{% endblock %}
-				{% block footer_content %}{% endblock %}
-			</div>
-
-			{% if sidebar %}
-				<aside class="site-sidebar">
-					{{sidebar}}
-				</aside>
-			{% endif %}
-
+				<div class="main-content {{sidebar_class}}">
+					{% block header_content %}{% endblock %}
+					{% block content %}
+						Sorry, no content
+					{% endblock %}
+					{% block footer_content %}{% endblock %}
+				</div>
 		</main>
+
+		{% block call_to_action %}
+			{% include 'chunks/call-to-action.twig' %}
+		{% endblock %}
 
 		<div class="contain-md">
 			<footer id="footer" class="site-footer" role="contentinfo">

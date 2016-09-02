@@ -1,0 +1,30 @@
+.call-to-action {
+  background: $brand-green;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+
+  a {
+    color: $utility-white;
+  }
+}
+
+.call-to-action-text {
+  color: $utility-white;
+  font-size: $size-h4;
+  padding-right: 20px;
+}
+
+.call-to-action-button {
+  background: $brand-blue;
+  border-radius: 40px;
+  font-size: $size-h4;
+  letter-spacing: 2px;
+  padding: 20px;
+  &:hover {
+    background: $digital-blue-light;
+  }
+}

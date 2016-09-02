@@ -1,0 +1,6 @@
+<div class="call-to-action">
+{% for chunk in post.get_field('chunks') %}
+  <p class="call-to-action-text">{{chunk.cta_text}}</p>
+  <a class="call-to-action-button" href="{{chunk.cta_button_link}}">{{chunk.cta_button_text}}</a>
+{% endfor %}
+</div>

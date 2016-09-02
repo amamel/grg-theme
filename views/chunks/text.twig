@@ -2,7 +2,6 @@
 
 {% block chunk_content %}
 
-  <h3>{{chunk.section_heading}}</h3>
-  {{chunk.section_text}}
-
+  <h3 class="{{css_class}}">{{chunk.heading}}</h3>
+      {{chunk.text}}
 {% endblock %}

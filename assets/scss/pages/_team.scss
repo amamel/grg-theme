@@ -1,0 +1,17 @@
+.f {
+  display: inline-block;
+  @include grid;
+}
+
+.f img {
+  width: 230px;
+  height: auto;
+  filter: grayscale(10);
+  &:hover {
+    filter: sepia(1);
+  }
+}
+
+.one {
+  @include cell(third);
+}

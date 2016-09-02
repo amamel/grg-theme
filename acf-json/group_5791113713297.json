@@ -61,6 +61,25 @@
             "media_upload": 0
         },
         {
+            "key": "field_57c72c5a451b2",
+            "label": "Google Maps API Key",
+            "name": "google_maps_api_key",
+            "type": "text",
+            "instructions": "An API Key for Google Maps is required if you want to show maps for events or locations. <a href=\"https:\/\/console.developers.google.com\/apis\/credentials\">Get an API Key<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5791130a2338d",
             "label": "Copyright",
             "name": "copyright",
@@ -69,7 +88,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -104,7 +123,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33.333",
                 "class": "",
                 "id": ""
             },
@@ -123,7 +142,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33.333",
                 "class": "",
                 "id": ""
             },
@@ -142,7 +161,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33.333",
                 "class": "",
                 "id": ""
             },
@@ -161,7 +180,22 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        },
+        {
+            "key": "field_57c72e2007e15",
+            "label": "Paragraph Color",
+            "name": "paragraph_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -403,5 +437,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1472508740
+    "modified": 1472671408
 }

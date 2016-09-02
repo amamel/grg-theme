@@ -65,137 +65,6 @@
                             "media_upload": 1
                         },
                         {
-                            "key": "field_57700781314f5",
-                            "label": "Free Form Items",
-                            "name": "free_form_items",
-                            "type": "repeater",
-                            "instructions": "",
-                            "required": "",
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "",
-                                        "operator": "=="
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "33.333333",
-                                "class": "",
-                                "id": ""
-                            },
-                            "collapsed": "",
-                            "min": "",
-                            "max": "",
-                            "layout": "",
-                            "button_label": "Add Item",
-                            "sub_fields": [
-                                {
-                                    "key": "field_5770052d314ee",
-                                    "label": "Item Heading",
-                                    "name": "item_heading",
-                                    "type": "text",
-                                    "instructions": "Heading for list item. One to three words.",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
-                                    "readonly": 0,
-                                    "disabled": 0
-                                },
-                                {
-                                    "key": "field_5770048f314ed",
-                                    "label": "SVG File Name",
-                                    "name": "svg",
-                                    "type": "text",
-                                    "instructions": "The name of the  SVG file, all lowercase, no spaces, and without the file extension. ",
-                                    "required": 0,
-                                    "conditional_logic": [
-                                        [
-                                            {
-                                                "field": "field_577002dff5e26",
-                                                "operator": "==",
-                                                "value": "icon"
-                                            }
-                                        ]
-                                    ],
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": "",
-                                    "readonly": 0,
-                                    "disabled": 0
-                                },
-                                {
-                                    "key": "field_5770056f314f0",
-                                    "label": "Item Text",
-                                    "name": "item_text",
-                                    "type": "textarea",
-                                    "instructions": "One to three sentences.",
-                                    "required": 0,
-                                    "conditional_logic": [
-                                        [
-                                            {
-                                                "field": "field_577002dff5e26",
-                                                "operator": "==",
-                                                "value": "text"
-                                            },
-                                            {
-                                                "field": "field_5770026bf5e25",
-                                                "operator": "==",
-                                                "value": "free_form"
-                                            }
-                                        ]
-                                    ],
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "maxlength": "",
-                                    "rows": 4,
-                                    "new_lines": "wpautop",
-                                    "readonly": 0,
-                                    "disabled": 0
-                                },
-                                {
-                                    "key": "field_57b6615e6e8e2",
-                                    "label": "Item Link",
-                                    "name": "item_link",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": "",
-                                    "conditional_logic": "",
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
-                                }
-                            ]
-                        },
-                        {
                             "key": "field_57b655286e8cf",
                             "label": "CSS Class",
                             "name": "css_class",
@@ -577,7 +446,7 @@
                             "placeholder": "",
                             "maxlength": "",
                             "rows": 4,
-                            "new_lines": "wpautop"
+                            "new_lines": "br"
                         }
                     ],
                     "min": "",
@@ -701,171 +570,6 @@
                             "default_value": "Medium",
                             "layout": "vertical",
                             "return_format": "value"
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                {
-                    "key": "575ee70f5a5eb",
-                    "name": "inline_elements",
-                    "label": "Inline Elements & Text",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_575ee7845a5f0",
-                            "label": "Elements",
-                            "name": "elements",
-                            "type": "flexible_content",
-                            "instructions": "Elements will appear inline with the text. There should always be one or two text blocks between other elements. Images will extend slightly beyond the text width to the right or left.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "button_label": "Add Element",
-                            "min": "",
-                            "max": "",
-                            "layouts": [
-                                {
-                                    "key": "575ee79a1bb2a",
-                                    "name": "image",
-                                    "label": "Image",
-                                    "display": "block",
-                                    "sub_fields": [
-                                        {
-                                            "key": "field_575ee7bf5a5f1",
-                                            "label": "Image",
-                                            "name": "image",
-                                            "type": "image",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": 50,
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "return_format": "id",
-                                            "preview_size": "thumbnail",
-                                            "library": "all",
-                                            "min_width": "",
-                                            "min_height": "",
-                                            "min_size": "",
-                                            "max_width": "",
-                                            "max_height": "",
-                                            "max_size": "",
-                                            "mime_types": ""
-                                        },
-                                        {
-                                            "key": "field_576c23bfccfc8",
-                                            "label": "Embed code",
-                                            "name": "embed_code",
-                                            "type": "textarea",
-                                            "instructions": "Paste the embed code for a map or video, for example.",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": 50,
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "maxlength": "",
-                                            "rows": "",
-                                            "new_lines": "",
-                                            "readonly": 0,
-                                            "disabled": 0
-                                        },
-                                        {
-                                            "key": "field_576d7bea03c6f",
-                                            "label": "Quote",
-                                            "name": "quote",
-                                            "type": "textarea",
-                                            "instructions": "The pull quote text.",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": 50,
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "default_value": "",
-                                            "placeholder": "",
-                                            "maxlength": "",
-                                            "rows": 4,
-                                            "new_lines": "",
-                                            "readonly": 0,
-                                            "disabled": 0
-                                        },
-                                        {
-                                            "key": "field_575ee8215a5f4",
-                                            "label": "Text",
-                                            "name": "text",
-                                            "type": "wysiwyg",
-                                            "instructions": "It is recommended to use only basic formatting, and to avoid headings. ",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "default_value": "",
-                                            "tabs": "all",
-                                            "toolbar": "basic",
-                                            "media_upload": 0
-                                        },
-                                        {
-                                            "key": "field_576d7bea03c70",
-                                            "label": "Alignment",
-                                            "name": "alignment",
-                                            "type": "radio",
-                                            "instructions": "",
-                                            "required": 0,
-                                            "conditional_logic": 0,
-                                            "wrapper": {
-                                                "width": "50",
-                                                "class": "",
-                                                "id": ""
-                                            },
-                                            "choices": {
-                                                "alignleft": "Left",
-                                                "alignright": "Right"
-                                            },
-                                            "allow_null": 1,
-                                            "other_choice": 0,
-                                            "save_other_choice": 0,
-                                            "default_value": "alignleft",
-                                            "layout": "vertical",
-                                            "return_format": "value"
-                                        }
-                                    ],
-                                    "min": "",
-                                    "max": ""
-                                },
-                                {
-                                    "key": "576c23bfccfc7",
-                                    "name": "embed",
-                                    "label": "Embed",
-                                    "display": "block",
-                                    "sub_fields": [],
-                                    "min": "",
-                                    "max": ""
-                                },
-                                {
-                                    "key": "575ee81a5a5f3",
-                                    "name": "text",
-                                    "label": "Text",
-                                    "display": "block",
-                                    "sub_fields": [],
-                                    "min": "",
-                                    "max": ""
-                                }
-                            ]
                         }
                     ],
                     "min": "",
@@ -1079,6 +783,499 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                {
+                    "key": "57c8307cf546f",
+                    "name": "gallery",
+                    "label": "Gallery",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_57c8308bf5470",
+                            "label": "Gallery",
+                            "name": "gallery",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 0,
+                            "max": "",
+                            "layout": "block",
+                            "button_label": "Add Icon",
+                            "sub_fields": [
+                                {
+                                    "key": "field_57c8330dad8d6",
+                                    "label": "Retirement Plans",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placement": "top",
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_57c830a7f5471",
+                                    "label": "Custodian Icon",
+                                    "name": "custodian_id",
+                                    "type": "image",
+                                    "instructions": "Custodian lcon",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "id",
+                                    "preview_size": "custom-4",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "svg, png"
+                                },
+                                {
+                                    "key": "field_57c83269c756d",
+                                    "label": "Custodian Name",
+                                    "name": "custodian_name",
+                                    "type": "text",
+                                    "instructions": "Name of custodian",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_57c830c4f5472",
+                                    "label": "Custodian Link",
+                                    "name": "custodian_link",
+                                    "type": "url",
+                                    "instructions": "Link to custodian login page",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_57c83376ad8d8",
+                                    "label": "Wealth Management",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placement": "top",
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_57c83398ad8d9",
+                                    "label": "Custodian Icon",
+                                    "name": "custodian_id",
+                                    "type": "image",
+                                    "instructions": "Custodian lcon",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "id",
+                                    "preview_size": "custom-4",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "svg, png"
+                                },
+                                {
+                                    "key": "field_57c833c3ad8da",
+                                    "label": "Custodian Name",
+                                    "name": "custodian_name",
+                                    "type": "text",
+                                    "instructions": "Name of custodian",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_57c833d1ad8db",
+                                    "label": "Custodian Link",
+                                    "name": "custodian_link",
+                                    "type": "url",
+                                    "instructions": "Link to custodian login page",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_57c8336cad8d7",
+                                    "label": "Non-for-profit",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placement": "top",
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_57c833f6ad8dd",
+                                    "label": "Custodian Icon",
+                                    "name": "custodian_id",
+                                    "type": "image",
+                                    "instructions": "Custodian lcon",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "id",
+                                    "preview_size": "custom-4",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "svg, png"
+                                },
+                                {
+                                    "key": "field_57c83409ad8de",
+                                    "label": "Custodian Name",
+                                    "name": "custodian_name",
+                                    "type": "text",
+                                    "instructions": "Name of custodian",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_57c83415ad8df",
+                                    "label": "Custodian Link",
+                                    "name": "custodian_link",
+                                    "type": "url",
+                                    "instructions": "Link to custodian login page",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_57c833e6ad8dc",
+                                    "label": "Plan Sponsors",
+                                    "name": "",
+                                    "type": "tab",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "placement": "top",
+                                    "endpoint": 0
+                                },
+                                {
+                                    "key": "field_57c83426ad8e0",
+                                    "label": "Custodian Icon",
+                                    "name": "custodian_id",
+                                    "type": "image",
+                                    "instructions": "Custodian lcon",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "id",
+                                    "preview_size": "custom-4",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "svg, png"
+                                },
+                                {
+                                    "key": "field_57c83448ad8e1",
+                                    "label": "Custodian Name",
+                                    "name": "custodian_name",
+                                    "type": "text",
+                                    "instructions": "Name of custodian",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_57c83457ad8e2",
+                                    "label": "Custodian Link",
+                                    "name": "custodian_link",
+                                    "type": "url",
+                                    "instructions": "Link to custodian login page",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "57c8cc8c7d35b",
+                    "name": "faqs",
+                    "label": "FAQs",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_57c8cc977d35c",
+                            "label": "FAQs",
+                            "name": "faqs",
+                            "type": "repeater",
+                            "instructions": "Frequently Asked Questions",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 2,
+                            "max": "",
+                            "layout": "table",
+                            "button_label": "Add Row",
+                            "sub_fields": [
+                                {
+                                    "key": "field_57c8ccb67d35d",
+                                    "label": "Question",
+                                    "name": "question",
+                                    "type": "textarea",
+                                    "instructions": "Question",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "Q:",
+                                    "maxlength": "",
+                                    "rows": 8,
+                                    "new_lines": "br"
+                                },
+                                {
+                                    "key": "field_57c8cce37d35e",
+                                    "label": "Answer",
+                                    "name": "answer",
+                                    "type": "textarea",
+                                    "instructions": "Answer",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "A:",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "br"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "57c9037616ea2",
+                    "name": "cards",
+                    "label": "Cards",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_57c9037c16ea3",
+                            "label": "Card",
+                            "name": "cards",
+                            "type": "repeater",
+                            "instructions": "Choose an icon, add text.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "collapsed": "",
+                            "min": 3,
+                            "max": "",
+                            "layout": "block",
+                            "button_label": "Add Card",
+                            "sub_fields": [
+                                {
+                                    "key": "field_57c903be16ea4",
+                                    "label": "Icon",
+                                    "name": "icon_id",
+                                    "type": "image",
+                                    "instructions": "Upload an icon. It should be a solid color and in PNG or SVG format.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33.333",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "id",
+                                    "preview_size": "custom-4",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "svg, png"
+                                },
+                                {
+                                    "key": "field_57c9051d569e2",
+                                    "label": "Title",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "Icon Title",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33.333",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_57c9044f16ea5",
+                                    "label": "Text",
+                                    "name": "text",
+                                    "type": "textarea",
+                                    "instructions": "One sentence description of the icon.",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "33.333",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": 2,
+                                    "new_lines": "wpautop"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             ]
         }
@@ -1096,6 +1293,13 @@
                 "param": "post_type",
                 "operator": "==",
                 "value": "post"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-bio.php"
             }
         ]
     ],
@@ -1119,5 +1323,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1472510820
+    "modified": 1472824258
 }

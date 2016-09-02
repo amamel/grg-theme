@@ -1,0 +1,16 @@
+{% block faqs %}
+<div class="contain-md">
+  <section class="faqs">
+    <div class="faqs-list">
+      {% for chunk in post.get_field('chunks') %}
+            {% for faq in chunk.faqs %}
+      <div class="faq-item">
+          <h5 class="faq-question">{{faq.question}}</h5>
+          <p class="faq-answer">{{faq.answer}}</p>
+      </div>
+            {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+  </section>
+{% endblock %}

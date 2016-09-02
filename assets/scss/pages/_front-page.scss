@@ -6,6 +6,15 @@
   padding: 0;
   display: flex;
   justify-content: center;
+  padding-bottom: 50px;
+}
+
+.featured-post {
+  padding: 10px;
+}
+
+.featured-post h5 {
+  font-weight: $font-weight-strong;
 }
 
 .service-icon,
@@ -22,6 +31,19 @@
 .service-icon {
   text-align: center;
   flex: 1 200px;
+  padding: 20px;
+  border-radius: $border-radius-base;
+  &:nth-child(1) {
+    background: #f8f8f8;
+  }
+  &:hover {
+    background: #f8f8f8;
+    transform: scale(1.15);
+  }
+  &:hover .service-icon-btn {
+    background: $digital-blue-light;
+    color: $utility-white;
+  }
 }
 
 .service-icon-img {
@@ -34,10 +56,10 @@
 }
 
 .service-icon-btn {
-  border: 1px solid $brand-blue;
+  border: 1px solid $digital-blue-light;
   border-radius: 40px;
   padding: 10px;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -53,11 +75,11 @@
 }
 
 .process-item {
-
+  width: 50%;
 }
 
 .process-item-title {
-  color: $brand-blue;
+  color: $digital-blue-light;
   font-weight: $font-weight-strong;
 }
 
@@ -70,9 +92,15 @@
 // Section Styles
 
 .front-page-section {
+  padding-bottom: 40px;
+
   &.-gray {
     background-color: #f8f8f8;
   }
+}
+
+.front-page-section-title {
+  padding-bottom: 50px;
 }
 
 .front-page-section-title,
@@ -82,7 +110,8 @@
 }
 
 .front-page-section-subtitle {
+  padding-top: 50px;
   @include upperspace;
-  color: $brand-blue;
+  color: $digital-blue-light;
   font-weight: $font-weight-strong;
 }

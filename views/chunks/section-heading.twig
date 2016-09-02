@@ -1,0 +1,9 @@
+<div class="contain-sm">
+<section class="section-heading">
+  {% for chunk in post.get_field('chunks') %}
+  <p class="section-subtitle">{{chunk.above_title}}</p>
+  <h2 class="section-title">{{chunk.section_title}}</h2>
+  <p class="section-lead">{{chunk.lead_paragraph}}</p>
+  {% endfor %}
+</section>
+</div>

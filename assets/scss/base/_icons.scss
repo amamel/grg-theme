@@ -41,3 +41,40 @@
 	fill: $digital-blue-dark;
 	background: blue;
 }
+
+.service-icon-img img{
+		max-width: 30%;
+}
+
+.concierge-chunk {
+	padding-bottom: 40px;
+}
+.concierge-icons-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 50px;
+}
+.concierge-icon {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	flex: 1 200px;
+	padding: 20px;
+}
+.concierge-icon-img {
+	display: flex;
+	justify-content: center;
+}
+
+.concierge-icon-img img {
+	max-width: 30%;
+}
+.concierge-icon-title {
+	font-weight: $font-weight-strong;
+}
+.concierge-icon-text {
+	font-size: $size-xsml;
+}

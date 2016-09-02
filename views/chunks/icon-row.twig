@@ -1,0 +1,17 @@
+{% block cards %}
+<div class="contain-md">
+    <ul class="concierge-icons-list">
+      {% for chunk in post.get_field('chunks') %}
+        {% for card in chunk.cards %}
+        <li class="concierge-icon">
+          <div class="concierge-icon-img">
+            <img src="{{TimberImage(card.icon_id).src('thumbnail')}}" alt="">
+          </div>
+          <h5 class="concierge-icon-title">{{card.title}}</h5>
+          <p class="concierge-icon-text">{{card.text}}</p>
+        </li>
+      {% endfor %}
+      {% endfor %}
+    </ul>
+</div>
+{% endblock %}

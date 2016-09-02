@@ -7,7 +7,7 @@
             "label": "Service Icons",
             "name": "service_icons",
             "type": "repeater",
-            "instructions": "Choose an icons, add text, and select a page to link to.",
+            "instructions": "Choose an icon, add text, and select a page to link to.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -35,7 +35,7 @@
                         "id": ""
                     },
                     "return_format": "id",
-                    "preview_size": "thumbnail",
+                    "preview_size": "custom-4",
                     "library": "all",
                     "min_width": "",
                     "min_height": "",
@@ -43,7 +43,7 @@
                     "max_width": "",
                     "max_height": "",
                     "max_size": "",
-                    "mime_types": ""
+                    "mime_types": "svg, png"
                 },
                 {
                     "key": "field_57c4c3e3725b7",
@@ -211,5 +211,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1472572319
+    "modified": 1472825056
 }

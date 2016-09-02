@@ -190,6 +190,16 @@ add_action('wp_head', 'grg_env_notice');
 
 
 
+// Register Google Map API
+ function grg_acf_init() {
+ 	acf_update_setting('google_api_key', 'AIzaSyAe-P5hvjHkdWe0BYpht_vDr-yqVK5hims');
+ }
+
+ add_action('acf/init', 'grg_acf_init');
+
+
+
+
 
 // Move excerpt box to top of post editor
 // https://wpartisan.me/tutorials/wordpress-how-to-move-the-excerpt-meta-box-above-the-editor

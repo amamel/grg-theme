@@ -38,10 +38,8 @@
 
   <section class="front-page-section -gray">
     <div class="contain-md">
-
     <p class="front-page-section-subtitle">Our Process</p>
     <h2 class="front-page-section-title">Making your money work for you</h2>
-
       <ul class="process-items-list">
         {% for item in post.get_field('process_items') %}
           <li class="process-item">
@@ -69,7 +67,6 @@
             <a href="{{feature.link}}">Read More</a>
           </li>
         {% endfor %}
-        </li>
       </ul>
 
     </div>
