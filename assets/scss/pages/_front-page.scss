@@ -7,6 +7,10 @@
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+  flex-wrap: wrap;
+  @include bp(md) {
+    flex-wrap: nowrap;
+  }
 }
 
 .featured-post {
@@ -25,20 +29,19 @@
 
 .service-icons-list {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .service-icon {
   text-align: center;
   flex: 1 200px;
-  padding: 20px;
-  border-radius: $border-radius-base;
-  &:nth-child(1) {
-    background: #f8f8f8;
-  }
+  padding: 50px;
   &:hover {
-    background: #f8f8f8;
-    transform: scale(1.15);
+    transition: box-shadow .3s ease-out;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .1),
+                0 8px 8px rgba(0, 0, 0, .1),
+                0 16px 16px rgba(0, 0, 0, .1),
+                0 32px 32px rgba(0, 0, 0, .15),
+                0 64px 64px rgba(0, 0, 0, .15);
   }
   &:hover .service-icon-btn {
     background: $digital-blue-light;
@@ -75,7 +78,12 @@
 }
 
 .process-item {
-  width: 50%;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  @include bp(md) {
+    width: 50%;
+  }
 }
 
 .process-item-title {
@@ -84,7 +92,6 @@
 }
 
 .process-item-text {
-
 }
 
 
